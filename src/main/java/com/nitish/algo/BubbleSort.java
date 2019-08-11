@@ -1,10 +1,12 @@
 package com.nitish.algo;
 
+import com.nitish.util.CommonUtil;
+
 public class BubbleSort {
 
 	public static void main(String[] args) {
 		int[] arr = { 3, 4, 1, 0, -4, 6, 9, 12, 4 };
-		printArray(doBubbleSort(arr));
+		CommonUtil.printArray(doBubbleSort(arr));
 	}
 
 	public static int[] doBubbleSort(int[] arr) {
@@ -17,16 +19,9 @@ public class BubbleSort {
 				}
 			}
 			System.out.print("Iteration: " + (i + 1) + " = ");
-			printArray(arr);
+			CommonUtil.printArray(arr);
 		}
 		return arr;
-	}
-
-	private static void printArray(int[] arr) {
-		for (int a : arr) {
-			System.out.print(a + ", ");
-		}
-		System.out.println();
 	}
 
 }
