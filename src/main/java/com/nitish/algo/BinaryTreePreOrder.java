@@ -2,6 +2,11 @@ package com.nitish.algo;
 
 import java.util.Stack;
 
+/**
+ * head -> left -> right
+ * @author Lenovo
+ *
+ */
 public class BinaryTreePreOrder {
 
 	public static void main(String[] args) {
@@ -25,9 +30,15 @@ public class BinaryTreePreOrder {
 	}
 
 	/*
-	 * 					  40
-	 * 			20					10
-	 * 		30		60			50		70
+	 * 				  40
+	 * 
+	 * 			20			10
+	 * 
+	 * 		30	   60	  50	70
+	 * 
+	 * ----------------Result----------------------
+	 * 40, 20, 30, 60, 10, 50, 70
+	 * 
 	 */
 
 	private static TreeNode createBinaryTree() {
